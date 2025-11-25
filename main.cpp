@@ -64,7 +64,6 @@ public:
         if (total_capacity < 0)
             throw invalid_argument{"total_capacity < 0"};
 
-
         // dp[c] = best achievable value using items seen so far with capacity c
         // dp[capacity] = 0
         vector<int64_t> dp(total_capacity + 1);
